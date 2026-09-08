@@ -21,7 +21,7 @@ beat naive baselines by a wide margin.
 ![Forecasts one day before release vs. the actual CPI print](results/forecast_comparison.png)
 
 *UCLA Master of Quantitative Economics, Quant Lab summer research project, June–August 2026.*
-*Team: Yuang Fu, [teammate names]. Mentor: [name].*
+*Team: Yuang Fu, Agnibha Bhattacharya, Yingxuan Li. Mentors: Lora Yovcheva, Nathan Kunz.*
 
 **Contents:** [Headline results](#headline-results) ·
 [How prices become a forecast](#how-prices-become-a-forecast) · [Method](#method) ·
