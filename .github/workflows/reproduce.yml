@@ -1,0 +1,23 @@
+# Rebuilds every derived table from the committed raw data and checks that the
+# result is byte-identical to what is committed, then runs the tests.
+name: reproduce
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  reproduce:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - run: pip install -r requirements.txt
+      - name: Rebuild clean tables and results (no network)
+        run: make build evaluate
+      - name: Regenerated tables must match the committed ones
+        run: git diff --exit-code --stat -- data/clean results/comparison.csv results/true_cpi.csv results/accuracy_by_horizon.csv results/diebold_mariano.csv results/evaluation.md
+      - name: Tests
+        run: make test

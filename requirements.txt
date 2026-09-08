@@ -1,0 +1,9 @@
+# Runtime dependencies for the whole pipeline (Python 3.9+).
+# Versions used for the committed results: pandas 2.2.3, numpy 2.0.2,
+# requests 2.32.3, openpyxl 3.1.5, matplotlib 3.9.2 (Python 3.9.1);
+# also verified with pandas 3.x on Python 3.11.
+requests>=2.31
+pandas>=2.2
+numpy>=1.26
+openpyxl>=3.1
+matplotlib>=3.8
