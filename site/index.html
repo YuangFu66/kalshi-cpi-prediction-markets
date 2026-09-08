@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Do Markets Know Inflation First?</title>
+<meta name="description" content="Interactive results: Kalshi's CPI prediction markets turned into market-implied forecast distributions and tested against the Cleveland Fed nowcast.">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.7/dist/chart.umd.min.js"></script>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow">UCLA Master of Quantitative Economics · Quant Lab · Summer 2026</p>
+    <h1>Do Markets Know Inflation First?</h1>
+    <p class="lede">Every month, real money trades on Kalshi contracts like <em>“Will CPI rise more than 0.3%?”</em>.
+      Differencing those prices gives a full market-implied probability distribution over the upcoming CPI print.
+      This page lets you explore five years of them and compare the market’s forecast with a professional model.</p>
+    <nav class="links">
+      <a href="https://github.com/YuangFu66/kalshi-cpi-prediction-markets" target="_blank" rel="noopener">Code, data &amp; methodology on GitHub</a>
+      <a href="#how">How it works</a>
+    </nav>
+    <div class="kpis" id="kpis" aria-label="Headline results"></div>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <section class="card" id="sec-timeline">
+    <div class="card-head">
+      <div>
+        <h2>Forecasts vs. the actual print</h2>
+        <p class="sub">Every forecaster read on the same date before each release. Hover for the values of one month.</p>
+      </div>
+      <button class="ghost" data-table="timeline" aria-pressed="false">Table</button>
+    </div>
+    <div class="controls">
+      <div class="seg" role="radiogroup" aria-label="Days before release" id="horizon-seg">
+        <span class="seg-label">Read</span>
+        <button role="radio" data-h="30">30 days out</button>
+        <button role="radio" data-h="14">14 days out</button>
+        <button role="radio" data-h="7">7 days out</button>
+        <button role="radio" data-h="1" aria-checked="true" class="on">1 day out</button>
+      </div>
+      <div class="pills" id="series-toggles" aria-label="Series">
+        <label class="pill"><input type="checkbox" data-ds="cleveland" checked><span class="key" data-color="s2"></span>Cleveland Fed nowcast</label>
+        <label class="pill"><input type="checkbox" data-ds="naive_last"><span class="key" data-color="s3"></span>Naive: last print</label>
+        <label class="pill"><input type="checkbox" data-ds="naive_avg"><span class="key" data-color="s4"></span>Naive: 12-month mean</label>
+      </div>
+    </div>
+    <div class="chart tall"><canvas id="timeline"></canvas></div>
+    <div class="table-view" id="table-timeline" hidden></div>
+  </section>
+
+  <section class="card" id="sec-error">
+    <div class="card-head">
+      <div>
+        <h2>Error by horizon</h2>
+        <p class="sub">Average miss against the first-release print, in percentage points of month-over-month CPI. Hover a pair for the Diebold–Mariano test of equal accuracy.</p>
+      </div>
+      <button class="ghost" data-table="error" aria-pressed="false">Table</button>
+    </div>
+    <div class="controls">
+      <div class="seg" role="radiogroup" aria-label="Metric" id="metric-seg">
+        <span class="seg-label">Metric</span>
+        <button role="radio" data-m="mae" aria-checked="true" class="on">Mean absolute error</button>
+        <button role="radio" data-m="rmse">Root mean squared error</button>
+      </div>
+      <div class="seg" role="radiogroup" aria-label="Sample" id="sample-seg">
+        <span class="seg-label">Sample</span>
+        <button role="radio" data-s="headline" aria-checked="true" class="on">Headline · 56 releases</button>
+        <button role="radio" data-s="all">All · 57 releases</button>
+      </div>
+    </div>
+    <div class="chart"><canvas id="error"></canvas></div>
+    <p class="note" id="error-note"></p>
+    <div class="table-view" id="table-error" hidden></div>
+  </section>
+
+  <section class="card" id="sec-dist">
+    <div class="card-head">
+      <div>
+        <h2>Inside one market: the implied distribution</h2>
+        <p class="sub">Pick a month and scrub through the days before its CPI release. The bars are the probabilities the market put on each outcome that day; the darker bar is what the BLS then printed.</p>
+      </div>
+      <button class="ghost" data-table="dist" aria-pressed="false">Table</button>
+    </div>
+    <div class="controls">
+      <label class="select-wrap"><span class="seg-label">Month</span>
+        <select id="event-select" aria-label="CPI month"></select></label>
+      <div class="slider-wrap">
+        <button class="ghost icon" id="play" aria-label="Play through the days">▶</button>
+        <input type="range" id="day-slider" min="0" max="0" value="0" aria-label="Days before release">
+        <span class="slider-label" id="day-label"></span>
+      </div>
+    </div>
+    <div class="dist-grid">
+      <div class="chart"><canvas id="dist"></canvas></div>
+      <div class="stats" id="dist-stats"></div>
+    </div>
+    <h3 class="minor">How the forecast evolved</h3>
+    <p class="sub">Implied mean with a ±1 SD band, the Cleveland Fed nowcast on the same days, and the print the BLS eventually released.</p>
+    <div class="chart"><canvas id="evolution"></canvas></div>
+    <div class="table-view" id="table-dist" hidden></div>
+  </section>
+
+  <section class="card" id="sec-curve">
+    <div class="card-head">
+      <div>
+        <h2>Accuracy as the release approaches</h2>
+        <p class="sub">Mean absolute error pooled across the headline releases, by the number of days before the BLS publication. The market keeps improving as information arrives; the nowcast plateaus.</p>
+      </div>
+      <button class="ghost" data-table="curve" aria-pressed="false">Table</button>
+    </div>
+    <div class="chart"><canvas id="curve"></canvas></div>
+    <div class="table-view" id="table-curve" hidden></div>
+  </section>
+
+  <section class="card prose" id="how">
+    <h2>How it works</h2>
+    <div class="grid3">
+      <div>
+        <h3>1 · Prices become probabilities</h3>
+        <p>Each monthly event lists 5–15 threshold contracts spaced 0.1 pp apart. The yes-price of “CPI &gt; x” is the market’s probability that the print exceeds x, so differencing adjacent prices slices the whole distribution into outcomes. The bins telescope to exactly 1; the only incoherence a threshold market can show is a higher threshold priced above a lower one, which is repaired with a running minimum and recorded.</p>
+      </div>
+      <div>
+        <h3>2 · Rules decided before results</h3>
+        <p>Price is the end-of-day bid/ask midpoint, never a stale last trade. Contracts quoted 0/100 are dropped. Ground truth is the first-release BLS number the market settled on. Every rule was written down before the evaluation ran, and every raw API response is committed untouched.</p>
+      </div>
+      <div>
+        <h3>3 · A fair comparison</h3>
+        <p>The Cleveland Fed’s daily nowcast is read on the same date as the market, 30, 14, 7 and 1 days before each release; naive baselines only use prints already published. The Diebold–Mariano test asks whether one forecaster’s errors are genuinely smaller month after month. October 2025 is excluded from the headline sample because the BLS never published it.</p>
+      </div>
+    </div>
+    <h3>Limitations</h3>
+    <ul>
+      <li>56 monthly releases, dominated by the 2021–23 inflation spike.</li>
+      <li>Thin liquidity early in each market’s life; spread and volume are shown for every day so you can judge.</li>
+      <li>The open-ended tail bins are valued one grid step beyond the last threshold, an assumption that matters most in high-inflation months.</li>
+      <li>No economist-consensus benchmark: no free archive exists.</li>
+    </ul>
+    <p class="sources">Data: Kalshi public trade API (series KXCPI, pulled 2026-07-21) · Federal Reserve Bank of Cleveland Inflation Nowcasting (2026-08-04) · U.S. Bureau of Labor Statistics. Team: Yuang Fu, Agnibha Bhattacharya, Yingxuan Li. Mentors: Lora Yovcheva, Nathan Kunz. Code under the MIT license.</p>
+  </section>
+</main>
+
+<footer class="wrap foot">
+  <span>Do Markets Know Inflation First? · UCLA MQE Quant Lab, 2026</span>
+  <a href="https://github.com/YuangFu66/kalshi-cpi-prediction-markets" target="_blank" rel="noopener">github.com/YuangFu66/kalshi-cpi-prediction-markets</a>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

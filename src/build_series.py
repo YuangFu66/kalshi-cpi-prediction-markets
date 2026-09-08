@@ -171,11 +171,13 @@ def load_market_days():
     return df
 
 
-def implied_distribution(day_df):
-    """From one (event, day) slice of threshold mids, build the distribution.
+def implied_bins(day_df):
+    """From one (event, day) slice of threshold mids, build the raw bins.
 
-    Returns dict with implied mean/sd, prob of the true outcome bin, and
-    data-quality diagnostics, or None if fewer than 2 informative thresholds.
+    Returns (informative rows, thresholds, monotone survival probabilities,
+    bin probabilities, bin values, worst monotonicity violation), or None if
+    fewer than 2 informative thresholds. Bin probabilities are the raw
+    differences (they telescope to 1); callers normalize.
     """
     g = day_df[day_df.spread <= MAX_SPREAD].sort_values("threshold", kind="mergesort")
     if len(g) < 2:
@@ -200,6 +202,29 @@ def implied_distribution(day_df):
         values.append((thresholds[i] + thresholds[i + 1] + GRID) / 2)
     probs.append(surv[-1])
     values.append(thresholds[-1] + GRID)           # top tail, see DECISIONS.md
+    return g, thresholds, surv, probs, values, violation
+
+
+def true_bin_index(thresholds, actual):
+    """Index of the bin (-inf, x1], (x1, x2], ..., (xn, inf) containing actual."""
+    if actual <= thresholds[0]:
+        return 0
+    for i in range(len(thresholds) - 1):
+        if thresholds[i] < actual <= thresholds[i + 1]:
+            return i + 1
+    return len(thresholds)                          # top tail
+
+
+def implied_distribution(day_df):
+    """From one (event, day) slice of threshold mids, build the distribution.
+
+    Returns dict with implied mean/sd, prob of the true outcome bin, and
+    data-quality diagnostics, or None if fewer than 2 informative thresholds.
+    """
+    bins = implied_bins(day_df)
+    if bins is None:
+        return None
+    g, thresholds, surv, probs, values, violation = bins
 
     total = sum(probs)
     if total <= 0:
@@ -221,14 +246,7 @@ def implied_distribution(day_df):
 
     actual = day_df.actual_cpi_mom.iloc[0]
     if pd.notna(actual):
-        idx = len(thresholds)                       # default: top tail
-        if actual <= thresholds[0]:
-            idx = 0
-        else:
-            for i in range(len(thresholds) - 1):
-                if thresholds[i] < actual <= thresholds[i + 1]:
-                    idx = i + 1
-                    break
+        idx = true_bin_index(thresholds, actual)
         out["prob_true_bin"] = probs[idx]
         out["abs_error_mean"] = abs(mean - actual)
     return out

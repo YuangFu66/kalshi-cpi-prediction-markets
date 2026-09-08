@@ -150,6 +150,19 @@ class CommittedDataReproducesReportedResults(unittest.TestCase):
         self.assertAlmostEqual(h.loc["cleveland", "mae"], 0.128, delta=0.0006)
         self.assertLess(h.loc["kalshi", "mae"], h.loc["naive_last", "mae"])
 
+    def test_site_data_matches_results(self):
+        import json
+        s = json.loads((ROOT / "site/data/summary.json").read_text())
+        acc = pd.read_csv(ROOT / "results/accuracy_by_horizon.csv")
+        h = acc[(acc["sample"] == "headline") & (acc.horizon_days == 1)].set_index("forecaster")
+        self.assertAlmostEqual(s["headline"]["kalshi_mae_1d"], h.loc["kalshi", "mae"], places=4)
+        events = json.loads((ROOT / "site/data/events.json").read_text())["events"]
+        self.assertEqual(len(events), 57)
+        for e in events:
+            for d in e["days"]:
+                self.assertAlmostEqual(sum(d["p"]), 1.0, delta=0.01)   # probabilities rounded to 3 dp
+                self.assertEqual(len(d["p"]), len(d["thr"]) + 1)
+
     def test_headline_diebold_mariano(self):
         dm = pd.read_csv(ROOT / "results/diebold_mariano.csv")
         r = dm[(dm["sample"] == "headline") & (dm.horizon_days == 1)

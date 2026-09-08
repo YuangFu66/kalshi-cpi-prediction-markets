@@ -19,7 +19,7 @@ jobs:
         run: make build evaluate
       - name: Regenerated tables must match the committed ones
         run: |
-          TABLES="data/clean results/comparison.csv results/true_cpi.csv results/accuracy_by_horizon.csv results/diebold_mariano.csv results/evaluation.md"
+          TABLES="data/clean results/comparison.csv results/true_cpi.csv results/accuracy_by_horizon.csv results/diebold_mariano.csv results/evaluation.md site/data"
           git diff --stat --exit-code -- $TABLES || { echo "::error::regenerated tables differ from the committed ones"; git diff -- $TABLES | head -80; exit 1; }
       - name: Tests
         run: make test

@@ -20,6 +20,8 @@ beat naive baselines by a wide margin.
 
 ![Forecasts one day before release vs. the actual CPI print](results/forecast_comparison.png)
 
+![Forecast error by horizon: Kalshi implied mean vs. Cleveland Fed nowcast](results/error_by_horizon.png)
+
 *UCLA Master of Quantitative Economics, Quant Lab summer research project, June–August 2026.*
 *Team: Yuang Fu, Agnibha Bhattacharya, Yingxuan Li. Mentors: Lora Yovcheva, Nathan Kunz.*
 
@@ -164,12 +166,14 @@ the real cases in [report/data_quality_methodology.md](report/data_quality_metho
 │   ├── build_series.py          clean + construct the forecast series   -> data/clean/
 │   ├── build_benchmarks.py      every forecaster per event and horizon  -> results/comparison.csv
 │   ├── evaluate.py              accuracy tables + Diebold–Mariano tests -> results/
-│   └── make_comparison_chart.py                                           -> results/forecast_comparison.png
+│   ├── make_comparison_chart.py, make_error_chart.py                      -> results/*.png
+│   └── export_site_data.py      the tables behind the interactive site  -> site/data/
 ├── data/                        data dictionary for every file: data/README.md
 │   ├── raw/                     Kalshi API responses, untouched (15 MB)
 │   ├── external/                Cleveland Fed nowcast archive, BLS CPI index
 │   └── clean/                   events_table, market_day, distribution_day, forecast_snapshots
-├── results/                     comparison.csv, evaluation.md, accuracy + DM tables, chart, workbook
+├── results/                     comparison.csv, evaluation.md, accuracy + DM tables, charts, workbook
+├── site/                        interactive results site (static HTML + Chart.js, deployed on Vercel)
 ├── report/                      proposal, methodology note, weekly updates, final presentation (PDF + PPTX)
 ├── tests/                       unit tests + checks that the committed data reproduces the reported numbers
 └── .github/workflows/           CI: rebuilds every table from the raw data and fails on any difference
@@ -181,7 +185,7 @@ the real cases in [report/data_quality_methodology.md](report/data_quality_metho
 git clone https://github.com/YuangFu66/kalshi-cpi-prediction-markets.git
 cd kalshi-cpi-prediction-markets
 pip install -r requirements.txt
-make          # rebuilds every clean table, results table and the chart from the committed raw data (~10 s, no network)
+make          # rebuilds every clean table, results table, chart and site dataset from the committed raw data (~15 s, no network)
 make test     # unit tests + integration checks against the numbers in this README
 ```
 

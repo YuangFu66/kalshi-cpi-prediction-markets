@@ -8,3 +8,7 @@ venv/
 # macOS / Office lock files
 .DS_Store
 ~$*
+
+# local tooling
+.claude/
+.vercel/

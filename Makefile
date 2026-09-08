@@ -16,9 +16,11 @@ build:     ## Clean tables + benchmark comparison from data/raw and data/externa
 	$(PY) src/build_series.py
 	$(PY) src/build_benchmarks.py
 
-evaluate:  ## Accuracy tables, Diebold-Mariano tests, chart -> results/
+evaluate:  ## Accuracy tables, DM tests, charts -> results/; data for the site -> site/data/
 	$(PY) src/evaluate.py
 	$(PY) src/make_comparison_chart.py
+	$(PY) src/make_error_chart.py
+	$(PY) src/export_site_data.py
 
 test:      ## Unit tests + checks that the committed data reproduces the README numbers
 	$(PY) -m unittest discover -s tests -v
