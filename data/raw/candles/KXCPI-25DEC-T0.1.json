@@ -1,0 +1,677 @@
+[
+ {
+  "end_period_ts": 1766120400,
+  "open_interest": "0.00",
+  "price": {
+   "close": null,
+   "high": null,
+   "low": null,
+   "mean": null,
+   "open": null,
+   "previous": null
+  },
+  "volume": "0.00",
+  "yes_ask": {
+   "close": "0.8800",
+   "high": "1.0000",
+   "low": "0.8800",
+   "open": "1.0000"
+  },
+  "yes_bid": {
+   "close": "0.8100",
+   "high": "0.8100",
+   "low": "0.0100",
+   "open": "0.0100"
+  }
+ },
+ {
+  "end_period_ts": 1766206800,
+  "open_interest": "516.00",
+  "price": {
+   "close": "0.9300",
+   "high": "0.9300",
+   "low": "0.8800",
+   "mean": "0.8961",
+   "open": "0.8800",
+   "previous": null
+  },
+  "volume": "516.00",
+  "yes_ask": {
+   "close": "0.9700",
+   "high": "0.9800",
+   "low": "0.8800",
+   "open": "0.8800"
+  },
+  "yes_bid": {
+   "close": "0.8600",
+   "high": "0.8600",
+   "low": "0.8100",
+   "open": "0.8100"
+  }
+ },
+ {
+  "end_period_ts": 1766293200,
+  "open_interest": "516.00",
+  "price": {
+   "close": null,
+   "high": null,
+   "low": null,
+   "mean": null,
+   "open": null,
+   "previous": "0.9300"
+  },
+  "volume": "0.00",
+  "yes_ask": {
+   "close": "0.9600",
+   "high": "0.9800",
+   "low": "0.9600",
+   "open": "0.9700"
+  },
+  "yes_bid": {
+   "close": "0.9000",
+   "high": "0.9100",
+   "low": "0.8500",
+   "open": "0.8600"
+  }
+ },
+ {
+  "end_period_ts": 1766379600,
+  "open_interest": "516.00",
+  "price": {
+   "close": null,
+   "high": null,
+   "low": null,
+   "mean": null,
+   "open": null,
+   "previous": "0.9300"
+  },
+  "volume": "0.00",
+  "yes_ask": {
+   "close": "0.9700",
+   "high": "0.9700",
+   "low": "0.9500",
+   "open": "0.9600"
+  },
+  "yes_bid": {
+   "close": "0.9000",
+   "high": "0.9000",
+   "low": "0.9000",
+   "open": "0.9000"
+  }
+ },
+ {
+  "end_period_ts": 1766466000,
+  "open_interest": "14446.00",
+  "price": {
+   "close": "0.8200",
+   "high": "0.9000",
+   "low": "0.7700",
+   "mean": "0.8113",
+   "open": "0.9000",
+   "previous": "0.9300"
+  },
+  "volume": "16101.00",
+  "yes_ask": {
+   "close": "0.8300",
+   "high": "0.9700",
+   "low": "0.7700",
+   "open": "0.9700"
+  },
+  "yes_bid": {
+   "close": "0.8000",
+   "high": "0.9100",
+   "low": "0.7300",
+   "open": "0.9000"
+  }
+ },
+ {
+  "end_period_ts": 1766552400,
+  "open_interest": "16150.00",
+  "price": {
+   "close": "0.8200",
+   "high": "0.8200",
+   "low": "0.7700",
+   "mean": "0.7863",
+   "open": "0.8100",
+   "previous": "0.8200"
+  },
+  "volume": "3069.00",
+  "yes_ask": {
+   "close": "0.8200",
+   "high": "0.8300",
+   "low": "0.7700",
+   "open": "0.8300"
+  },
+  "yes_bid": {
+   "close": "0.8000",
+   "high": "0.8100",
+   "low": "0.7400",
+   "open": "0.8000"
+  }
+ },
+ {
+  "end_period_ts": 1766638800,
+  "open_interest": "16604.00",
+  "price": {
+   "close": "0.8200",
+   "high": "0.8200",
+   "low": "0.7800",
+   "mean": "0.8155",
+   "open": "0.8100",
+   "previous": "0.8200"
+  },
+  "volume": "1859.00",
+  "yes_ask": {
+   "close": "0.9000",
+   "high": "0.9600",
+   "low": "0.7800",
+   "open": "0.8200"
+  },
+  "yes_bid": {
+   "close": "0.8200",
+   "high": "0.8500",
+   "low": "0.7300",
+   "open": "0.8000"
+  }
+ },
+ {
+  "end_period_ts": 1766725200,
+  "open_interest": "16746.00",
+  "price": {
+   "close": "0.8800",
+   "high": "0.9000",
+   "low": "0.8600",
+   "mean": "0.8788",
+   "open": "0.9000",
+   "previous": "0.8200"
+  },
+  "volume": "970.00",
+  "yes_ask": {
+   "close": "0.8900",
+   "high": "0.9700",
+   "low": "0.8700",
+   "open": "0.9000"
+  },
+  "yes_bid": {
+   "close": "0.8700",
+   "high": "0.8700",
+   "low": "0.7800",
+   "open": "0.8200"
+  }
+ },
+ {
+  "end_period_ts": 1766811600,
+  "open_interest": "26965.00",
+  "price": {
+   "close": "0.7800",
+   "high": "0.8900",
+   "low": "0.7200",
+   "mean": "0.7772",
+   "open": "0.8900",
+   "previous": "0.8800"
+  },
+  "volume": "12923.00",
+  "yes_ask": {
+   "close": "0.7800",
+   "high": "0.9800",
+   "low": "0.7200",
+   "open": "0.8900"
+  },
+  "yes_bid": {
+   "close": "0.7500",
+   "high": "0.8800",
+   "low": "0.6600",
+   "open": "0.8700"
+  }
+ },
+ {
+  "end_period_ts": 1766898000,
+  "open_interest": "27264.00",
+  "price": {
+   "close": "0.8000",
+   "high": "0.8000",
+   "low": "0.7800",
+   "mean": "0.7870",
+   "open": "0.7800",
+   "previous": "0.7800"
+  },
+  "volume": "834.00",
+  "yes_ask": {
+   "close": "0.8000",
+   "high": "0.8900",
+   "low": "0.7800",
+   "open": "0.7800"
+  },
+  "yes_bid": {
+   "close": "0.7900",
+   "high": "0.7900",
+   "low": "0.7100",
+   "open": "0.7500"
+  }
+ },
+ {
+  "end_period_ts": 1766984400,
+  "open_interest": "27275.00",
+  "price": {
+   "close": "0.8100",
+   "high": "0.8100",
+   "low": "0.7900",
+   "mean": "0.8022",
+   "open": "0.8000",
+   "previous": "0.8000"
+  },
+  "volume": "1379.00",
+  "yes_ask": {
+   "close": "0.8000",
+   "high": "0.9100",
+   "low": "0.8000",
+   "open": "0.8000"
+  },
+  "yes_bid": {
+   "close": "0.7800",
+   "high": "0.7900",
+   "low": "0.7800",
+   "open": "0.7900"
+  }
+ },
+ {
+  "end_period_ts": 1767070800,
+  "open_interest": "32287.00",
+  "price": {
+   "close": "0.7900",
+   "high": "0.7900",
+   "low": "0.7300",
+   "mean": "0.7300",
+   "open": "0.7800",
+   "previous": "0.8100"
+  },
+  "volume": "5025.00",
+  "yes_ask": {
+   "close": "0.8000",
+   "high": "0.8000",
+   "low": "0.7300",
+   "open": "0.8000"
+  },
+  "yes_bid": {
+   "close": "0.7400",
+   "high": "0.7800",
+   "low": "0.7100",
+   "open": "0.7800"
+  }
+ },
+ {
+  "end_period_ts": 1767157200,
+  "open_interest": "44355.00",
+  "price": {
+   "close": "0.7500",
+   "high": "0.8200",
+   "low": "0.7000",
+   "mean": "0.7357",
+   "open": "0.7500",
+   "previous": "0.7900"
+  },
+  "volume": "17538.00",
+  "yes_ask": {
+   "close": "0.8100",
+   "high": "0.8600",
+   "low": "0.7300",
+   "open": "0.8000"
+  },
+  "yes_bid": {
+   "close": "0.7700",
+   "high": "0.7900",
+   "low": "0.7000",
+   "open": "0.7400"
+  }
+ },
+ {
+  "end_period_ts": 1767243600,
+  "open_interest": "49456.00",
+  "price": {
+   "close": "0.7800",
+   "high": "0.8100",
+   "low": "0.7500",
+   "mean": "0.7623",
+   "open": "0.7700",
+   "previous": "0.7500"
+  },
+  "volume": "5365.00",
+  "yes_ask": {
+   "close": "0.7800",
+   "high": "0.8200",
+   "low": "0.7600",
+   "open": "0.8100"
+  },
+  "yes_bid": {
+   "close": "0.7700",
+   "high": "0.7900",
+   "low": "0.7200",
+   "open": "0.7700"
+  }
+ },
+ {
+  "end_period_ts": 1767330000,
+  "open_interest": "49693.00",
+  "price": {
+   "close": "0.8700",
+   "high": "0.8700",
+   "low": "0.7800",
+   "mean": "0.8290",
+   "open": "0.7800",
+   "previous": "0.7800"
+  },
+  "volume": "7364.00",
+  "yes_ask": {
+   "close": "0.8700",
+   "high": "0.8700",
+   "low": "0.7800",
+   "open": "0.7800"
+  },
+  "yes_bid": {
+   "close": "0.8400",
+   "high": "0.8400",
+   "low": "0.7600",
+   "open": "0.7700"
+  }
+ },
+ {
+  "end_period_ts": 1767416400,
+  "open_interest": "50067.00",
+  "price": {
+   "close": "0.8600",
+   "high": "0.8700",
+   "low": "0.8200",
+   "mean": "0.8473",
+   "open": "0.8700",
+   "previous": "0.8700"
+  },
+  "volume": "850.00",
+  "yes_ask": {
+   "close": "0.8700",
+   "high": "0.8700",
+   "low": "0.8200",
+   "open": "0.8700"
+  },
+  "yes_bid": {
+   "close": "0.8200",
+   "high": "0.8600",
+   "low": "0.8100",
+   "open": "0.8400"
+  }
+ },
+ {
+  "end_period_ts": 1767502800,
+  "open_interest": "50455.00",
+  "price": {
+   "close": "0.8800",
+   "high": "0.8800",
+   "low": "0.8700",
+   "mean": "0.8709",
+   "open": "0.8700",
+   "previous": "0.8600"
+  },
+  "volume": "585.00",
+  "yes_ask": {
+   "close": "0.8800",
+   "high": "0.8800",
+   "low": "0.8700",
+   "open": "0.8700"
+  },
+  "yes_bid": {
+   "close": "0.8700",
+   "high": "0.8700",
+   "low": "0.8200",
+   "open": "0.8200"
+  }
+ },
+ {
+  "end_period_ts": 1767589200,
+  "open_interest": "50494.00",
+  "price": {
+   "close": "0.8900",
+   "high": "0.8900",
+   "low": "0.8500",
+   "mean": "0.8705",
+   "open": "0.8800",
+   "previous": "0.8800"
+  },
+  "volume": "5019.00",
+  "yes_ask": {
+   "close": "0.8900",
+   "high": "0.8900",
+   "low": "0.8700",
+   "open": "0.8800"
+  },
+  "yes_bid": {
+   "close": "0.8600",
+   "high": "0.8700",
+   "low": "0.8500",
+   "open": "0.8700"
+  }
+ },
+ {
+  "end_period_ts": 1767675600,
+  "open_interest": "52595.00",
+  "price": {
+   "close": "0.9200",
+   "high": "0.9200",
+   "low": "0.8600",
+   "mean": "0.8651",
+   "open": "0.8700",
+   "previous": "0.8900"
+  },
+  "volume": "2211.00",
+  "yes_ask": {
+   "close": "0.9400",
+   "high": "0.9500",
+   "low": "0.8500",
+   "open": "0.8900"
+  },
+  "yes_bid": {
+   "close": "0.9100",
+   "high": "0.9100",
+   "low": "0.8000",
+   "open": "0.8600"
+  }
+ },
+ {
+  "end_period_ts": 1767762000,
+  "open_interest": "53509.00",
+  "price": {
+   "close": "0.8900",
+   "high": "0.9100",
+   "low": "0.8700",
+   "mean": "0.8832",
+   "open": "0.9100",
+   "previous": "0.9200"
+  },
+  "volume": "1622.00",
+  "yes_ask": {
+   "close": "0.9000",
+   "high": "0.9400",
+   "low": "0.8400",
+   "open": "0.9400"
+  },
+  "yes_bid": {
+   "close": "0.8800",
+   "high": "0.9100",
+   "low": "0.7100",
+   "open": "0.9100"
+  }
+ },
+ {
+  "end_period_ts": 1767848400,
+  "open_interest": "52091.00",
+  "price": {
+   "close": "0.8500",
+   "high": "0.9000",
+   "low": "0.7800",
+   "mean": "0.8810",
+   "open": "0.8900",
+   "previous": "0.8900"
+  },
+  "volume": "9165.00",
+  "yes_ask": {
+   "close": "0.8800",
+   "high": "0.9000",
+   "low": "0.8600",
+   "open": "0.9000"
+  },
+  "yes_bid": {
+   "close": "0.8500",
+   "high": "0.8900",
+   "low": "0.7700",
+   "open": "0.8800"
+  }
+ },
+ {
+  "end_period_ts": 1767934800,
+  "open_interest": "52234.00",
+  "price": {
+   "close": "0.9300",
+   "high": "0.9300",
+   "low": "0.8600",
+   "mean": "0.8947",
+   "open": "0.8600",
+   "previous": "0.8500"
+  },
+  "volume": "298.00",
+  "yes_ask": {
+   "close": "0.9300",
+   "high": "0.9300",
+   "low": "0.8800",
+   "open": "0.8800"
+  },
+  "yes_bid": {
+   "close": "0.8800",
+   "high": "0.8900",
+   "low": "0.8500",
+   "open": "0.8500"
+  }
+ },
+ {
+  "end_period_ts": 1768021200,
+  "open_interest": "52649.00",
+  "price": {
+   "close": "0.9300",
+   "high": "0.9400",
+   "low": "0.9000",
+   "mean": "0.9109",
+   "open": "0.9300",
+   "previous": "0.9300"
+  },
+  "volume": "972.00",
+  "yes_ask": {
+   "close": "0.9400",
+   "high": "0.9500",
+   "low": "0.9100",
+   "open": "0.9300"
+  },
+  "yes_bid": {
+   "close": "0.9200",
+   "high": "0.9300",
+   "low": "0.8800",
+   "open": "0.8800"
+  }
+ },
+ {
+  "end_period_ts": 1768107600,
+  "open_interest": "52881.00",
+  "price": {
+   "close": "0.9100",
+   "high": "0.9700",
+   "low": "0.9100",
+   "mean": "0.9333",
+   "open": "0.9400",
+   "previous": "0.9300"
+  },
+  "volume": "552.00",
+  "yes_ask": {
+   "close": "0.9100",
+   "high": "0.9800",
+   "low": "0.9100",
+   "open": "0.9400"
+  },
+  "yes_bid": {
+   "close": "0.9000",
+   "high": "0.9400",
+   "low": "0.8900",
+   "open": "0.9200"
+  }
+ },
+ {
+  "end_period_ts": 1768194000,
+  "open_interest": "53828.00",
+  "price": {
+   "close": "0.9300",
+   "high": "0.9500",
+   "low": "0.9200",
+   "mean": "0.9262",
+   "open": "0.9400",
+   "previous": "0.9100"
+  },
+  "volume": "2553.00",
+  "yes_ask": {
+   "close": "0.9300",
+   "high": "0.9600",
+   "low": "0.9100",
+   "open": "0.9100"
+  },
+  "yes_bid": {
+   "close": "0.9200",
+   "high": "0.9300",
+   "low": "0.9000",
+   "open": "0.9000"
+  }
+ },
+ {
+  "end_period_ts": 1768280400,
+  "open_interest": "61120.00",
+  "price": {
+   "close": "0.9800",
+   "high": "0.9800",
+   "low": "0.9200",
+   "mean": "0.9416",
+   "open": "0.9300",
+   "previous": "0.9300"
+  },
+  "volume": "11012.00",
+  "yes_ask": {
+   "close": "0.9800",
+   "high": "1.0000",
+   "low": "0.9200",
+   "open": "0.9300"
+  },
+  "yes_bid": {
+   "close": "0.9400",
+   "high": "0.9400",
+   "low": "0.9100",
+   "open": "0.9200"
+  }
+ },
+ {
+  "end_period_ts": 1768366800,
+  "open_interest": "61525.00",
+  "price": {
+   "close": "0.9500",
+   "high": "0.9500",
+   "low": "0.9400",
+   "mean": "0.9404",
+   "open": "0.9400",
+   "previous": "0.9800"
+  },
+  "volume": "405.00",
+  "yes_ask": {
+   "close": "1.0000",
+   "high": "1.0000",
+   "low": "0.9800",
+   "open": "0.9800"
+  },
+  "yes_bid": {
+   "close": "0.0000",
+   "high": "0.9700",
+   "low": "0.0000",
+   "open": "0.9400"
+  }
+ }
+]

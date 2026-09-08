@@ -1,0 +1,10 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.ipynb_checkpoints/
+
+# macOS / Office lock files
+.DS_Store
+~$*

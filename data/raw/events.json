@@ -1,0 +1,1190 @@
+[
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26NOV",
+  "last_updated_ts": "2026-05-05T21:25:41.191484Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Nov 2026",
+  "title": "CPI in November"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26OCT",
+  "last_updated_ts": "2026-05-05T21:25:41.191484Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Oct 2026",
+  "title": "CPI in October"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26SEP",
+  "last_updated_ts": "2026-07-20T17:44:26.572655Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Sep 2026",
+  "title": "CPI in September"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26AUG",
+  "last_updated_ts": "2026-07-20T17:41:47.201226Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Aug 2026",
+  "title": "CPI in August"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26JUL",
+  "last_updated_ts": "2026-06-16T17:34:18.379604Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jul 2026",
+  "title": "CPI in July"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26JUN",
+  "last_updated_ts": "2026-06-08T21:52:33.720115Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jun 2026",
+  "title": "CPI in June"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26MAY",
+  "last_updated_ts": "2026-05-05T21:25:41.191484Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In May 2026",
+  "title": "CPI in May"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26APR",
+  "last_updated_ts": "2026-05-05T21:25:41.191484Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Apr 2026",
+  "title": "CPI in April"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26MAR",
+  "last_updated_ts": "2026-05-05T21:25:41.191484Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Mar 2026",
+  "title": "CPI in Mar 2026"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26FEB",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Feb 2026",
+  "title": "CPI in Feb 2026?"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-26JAN",
+  "last_updated_ts": "2026-05-05T21:25:41.191484Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jan 2026",
+  "title": "CPI in Jan 2026?"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25DEC",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Dec 2025",
+  "title": "CPI in Dec 2025?"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25NOV",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Nov 2025",
+  "title": "CPI in Nov 2025?"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25OCT",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Oct 2025",
+  "title": "CPI in Oct 2025?"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25SEP",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Sep 2025",
+  "title": "CPI in Sep 2025?"
+ },
+ {
+  "available_on_brokers": true,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25AUG",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Aug 2025",
+  "title": "CPI in Aug 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25JUL",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jul 2025",
+  "title": "CPI in Jul 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-25JUN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jun 2025",
+  "title": "CPI in Jun 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "DIRECNET",
+  "event_ticker": "KXCPI-25MAY",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In May 2025",
+  "title": "CPI in May 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-25APR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Apr 2025",
+  "title": "CPI in Apr 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-25MAR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Mar 2025",
+  "title": "CPI in Mar 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-25FEB",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Feb 2025",
+  "title": "CPI in Feb 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-25JAN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jan 2025",
+  "title": "CPI in Jan 2025?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-24DEC",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Dec 2024",
+  "title": "CPI in Dec 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "KXCPI-24NOV",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Nov 2024",
+  "title": "CPI in Nov 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24OCT",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Oct 2024",
+  "title": "CPI in Oct 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24SEP",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Sep 2024",
+  "title": "CPI in Sep 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24AUG",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Aug 2024",
+  "title": "CPI in Aug 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24JUL",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jul 2024",
+  "title": "CPI in Jul 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24JUN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jun 2024",
+  "title": "CPI in Jun 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24MAY",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In May 2024",
+  "title": "CPI in May 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24APR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Apr 2024",
+  "title": "CPI in Apr 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24MAR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Mar 2024",
+  "title": "CPI in Mar 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24FEB",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Feb 2024",
+  "title": "CPI in Feb 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-24JAN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "BLS",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Jan 2024",
+  "title": "CPI in Jan 2024?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23DEC",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In Dec 2023",
+  "title": "CPI in Dec 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23NOV",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "November 2023",
+  "sub_title": "In Nov 2023",
+  "title": "CPI in Nov 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23OCT",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "October 2023",
+  "sub_title": "In Oct 2023",
+  "title": "CPI in Oct 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23SEP",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "September 2023",
+  "sub_title": "In Sep 2023",
+  "title": "CPI in Sep 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23AUG",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "August 2023",
+  "sub_title": "In Aug 2023",
+  "title": "CPI in Aug 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23JUL",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "July 2023",
+  "sub_title": "In Jul 2023",
+  "title": "CPI in Jul 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23JUN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "June 2023",
+  "sub_title": "In Jun 2023",
+  "title": "CPI in Jun 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23MAY",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "May 2023",
+  "sub_title": "In May 2023",
+  "title": "CPI in May 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23APR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "April 2023",
+  "sub_title": "In Apr 2023",
+  "title": "CPI in Apr 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23MAR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "March 2023",
+  "sub_title": "In Mar 2023",
+  "title": "CPI in Mar 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23FEB",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "February 2023",
+  "sub_title": "In Feb 2023",
+  "title": "CPI in Feb 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-23JAN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "January 2023",
+  "sub_title": "In Jan 2023",
+  "title": "CPI in Jan 2023?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22DEC",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "December 2022",
+  "sub_title": "In December 2022",
+  "title": "CPI in December 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22NOV",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In November 2022",
+  "title": "CPI in November 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22OCT",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In October 2022",
+  "title": "CPI in October 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22SEP",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In September 2022",
+  "title": "CPI in September 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22AUG",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In August 2022",
+  "title": "CPI in August 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22JUL",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In July 2022",
+  "title": "CPI in July 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22JUN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In June 2022",
+  "title": "CPI in June 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22MAY",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In May 2022",
+  "title": "CPI in May 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22APR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In April 2022",
+  "title": "CPI in April 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22MAR",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In March 2022",
+  "title": "CPI in March 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22FEB",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In February 2022",
+  "title": "CPI in February 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-22JAN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In January 2022",
+  "title": "CPI in January 2022?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21DEC",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In December 2021",
+  "title": "CPI in December 2021?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21NOV",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In November 2021",
+  "title": "CPI in November 2021?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21OCT",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In October 2021",
+  "title": "CPI in October 2021?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21SEP",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In September 2021",
+  "title": "CPI in September 2021?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21AUG",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In August 2021",
+  "title": "CPI in August 2021?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21JUL",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In July 2021",
+  "title": "CPI in July 2021?"
+ },
+ {
+  "available_on_brokers": false,
+  "category": "Economics",
+  "collateral_return_type": "",
+  "event_ticker": "CPI-21JUN",
+  "last_updated_ts": "2026-02-26T08:50:31.901806Z",
+  "mutually_exclusive": false,
+  "series_ticker": "KXCPI",
+  "settlement_sources": [
+   {
+    "name": "Bureau of Labor Statistics",
+    "url": "https://www.bls.gov/cpi/"
+   }
+  ],
+  "strike_period": "",
+  "sub_title": "In June 2021",
+  "title": "CPI in June 2021?"
+ }
+]
