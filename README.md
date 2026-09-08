@@ -6,6 +6,8 @@
 ![Python 3.9+](https://img.shields.io/badge/python-3.9%2B-blue)
 ![License: MIT](https://img.shields.io/badge/license-MIT-green)
 
+**Interactive version: [kalshi-cpi-forecasts.vercel.app](https://kalshi-cpi-forecasts.vercel.app)** — scrub through any month's market-implied distribution day by day, switch horizons and benchmarks, and read every value on hover.
+
 Every month, real money trades on [Kalshi](https://kalshi.com) contracts of the form
 *"Will CPI rise more than 0.3%?"*. This project turns five years of those prices
 (monthly markets since June 2021) into a daily, market-implied probability
@@ -173,7 +175,7 @@ the real cases in [report/data_quality_methodology.md](report/data_quality_metho
 │   ├── external/                Cleveland Fed nowcast archive, BLS CPI index
 │   └── clean/                   events_table, market_day, distribution_day, forecast_snapshots
 ├── results/                     comparison.csv, evaluation.md, accuracy + DM tables, charts, workbook
-├── site/                        interactive results site (static HTML + Chart.js, deployed on Vercel)
+├── site/                        interactive results site (static HTML + Chart.js) -> kalshi-cpi-forecasts.vercel.app
 ├── report/                      proposal, methodology note, weekly updates, final presentation (PDF + PPTX)
 ├── tests/                       unit tests + checks that the committed data reproduces the reported numbers
 └── .github/workflows/           CI: rebuilds every table from the raw data and fails on any difference
@@ -202,6 +204,7 @@ Python 3.9 / pandas 2.2 and Python 3.11 / pandas 3.
 
 | Document | What it is |
 |---|---|
+| [kalshi-cpi-forecasts.vercel.app](https://kalshi-cpi-forecasts.vercel.app) | Interactive results site (source in `site/`, data exported by `src/export_site_data.py`) |
 | [report/CPI_final_presentation.pdf](report/CPI_final_presentation.pdf) | Final presentation, August 2026 ([PPTX](report/CPI_final_presentation.pptx)) |
 | [report/proposal.md](report/proposal.md) | Week 1 proposal: question, market structure, construction plan, expected challenges |
 | [report/data_quality_methodology.md](report/data_quality_methodology.md) | How every data problem became a rule, with the real cases |
