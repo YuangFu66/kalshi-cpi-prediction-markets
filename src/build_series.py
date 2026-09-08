@@ -31,6 +31,7 @@ GRID = 0.1          # CPI settles on a one-decimal grid
 MAX_SPREAD = 0.90   # markets quoted 0/100 carry no information -> drop
 HORIZONS = [30, 14, 7, 1]
 SNAP_TOLERANCE = 3  # nearest available day within +/- this many days
+DECIMALS = 10       # written precision: float sums differ in the last bit across CPUs
 
 
 def parse_threshold(ticker, event_ticker):
@@ -226,7 +227,7 @@ def main():
     print(f"events_table.csv: {len(ev)} events, {int(ev.settled.sum())} settled")
 
     md = load_market_days()
-    md.to_csv(CLEAN / "market_day.csv", index=False)
+    md.round(DECIMALS).to_csv(CLEAN / "market_day.csv", index=False)
     print(f"market_day.csv: {len(md)} rows, "
           f"{md.ticker.nunique()} markets, {md.event_ticker.nunique()} events")
 
@@ -249,7 +250,7 @@ def main():
              "settled", "actual_cpi_mom", "implied_mean", "implied_sd",
              "prob_true_bin", "abs_error_mean"]
     dd = dd[front + [c for c in dd.columns if c not in front]]
-    dd.to_csv(CLEAN / "distribution_day.csv", index=False)
+    dd.round(DECIMALS).to_csv(CLEAN / "distribution_day.csv", index=False)
     print(f"distribution_day.csv: {len(dd)} event-days")
 
     # fixed-horizon snapshots for settled events
@@ -267,7 +268,7 @@ def main():
     sd = pd.DataFrame(snaps)
     sd = sd[["event_ticker", "horizon"] + [c for c in sd.columns
                                            if c not in ("event_ticker", "horizon")]]
-    sd.to_csv(CLEAN / "forecast_snapshots.csv", index=False)
+    sd.round(DECIMALS).to_csv(CLEAN / "forecast_snapshots.csv", index=False)
     print(f"forecast_snapshots.csv: {len(sd)} rows "
           f"({sd.event_ticker.nunique()} settled events x up to {len(HORIZONS)} horizons)")
 
