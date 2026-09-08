@@ -97,8 +97,15 @@ def candle_num(candle, key):
 
 
 def candle_date(end_period_ts):
-    """A daily candle ends at midnight ET; label it with the day it covers."""
-    dt = datetime.fromtimestamp(end_period_ts - 1, tz=timezone.utc).astimezone(ET)
+    """Label a daily candle with the ET calendar day it covers.
+
+    Candles nominally end at midnight ET, but Kalshi moves the boundary one
+    day late at the spring daylight-saving change, so that one candle a year
+    ends at 01:00 EDT. Taking the label from the candle's midpoint (12 hours
+    before its end) is immune to that wobble; labeling from the end
+    timestamp put two candles on the same day and left the previous day empty.
+    """
+    dt = datetime.fromtimestamp(end_period_ts - 12 * 3600, tz=timezone.utc).astimezone(ET)
     return dt.date()
 
 
@@ -155,6 +162,11 @@ def load_market_days():
         print(f"NOTE: {len(unparsed)} markets skipped (non-threshold ticker "
               f"format): {sorted(set(unparsed))[:10]}")
     df = pd.DataFrame(rows)
+    dup = df.duplicated(["ticker", "date"], keep="last")
+    if dup.any():                       # safeguard: one candle per contract-day
+        print(f"NOTE: {int(dup.sum())} duplicate contract-days dropped "
+              f"(kept the latest-ending candle)")
+        df = df[~dup]
     df = df[(df.days_to_release >= 0) & (df.days_to_release <= 150)]
     return df
 
@@ -165,7 +177,7 @@ def implied_distribution(day_df):
     Returns dict with implied mean/sd, prob of the true outcome bin, and
     data-quality diagnostics, or None if fewer than 2 informative thresholds.
     """
-    g = day_df[day_df.spread <= MAX_SPREAD].sort_values("threshold")
+    g = day_df[day_df.spread <= MAX_SPREAD].sort_values("threshold", kind="mergesort")
     if len(g) < 2:
         return None
     thresholds = g.threshold.to_list()

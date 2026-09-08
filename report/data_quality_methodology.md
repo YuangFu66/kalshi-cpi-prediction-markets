@@ -86,6 +86,30 @@ The extreme bins are unbounded but the implied mean needs a value for them.
 the outermost threshold), document it, and sensitivity-check conclusions
 against alternative tail choices in the evaluation.
 
+### 7. Daylight-saving candle collision (found after the presentation, 2026-09-08)
+
+When the pipeline was published with a continuous-integration check that
+rebuilds every table and compares it byte-for-byte with the committed one,
+the check failed on Linux while passing on macOS. The diff pointed at twelve
+event-days, all the Monday after a spring daylight-saving change, with twice
+the usual number of thresholds. Kalshi's daily candles end at midnight ET,
+but the boundary moves one day late at the DST change, so one candle a year
+ends at 01:00 EDT; labeling candles by their end timestamp put that candle
+and the next one on the same day, and the unstable sort then ordered the
+duplicates differently on the two platforms.
+
+**Rule:** label each candle by the ET date of its midpoint (12 hours before
+its end), which is immune to a one-hour wobble; drop any duplicate
+contract-day that still appears, keeping the latest-ending candle, and say
+so in the build log.
+
+**Example:** CPI-24FEB, 2024-03-11 (one day before release) had 10 rows for
+5 contracts; after the fix it has 5 and 2024-03-10 is no longer empty. The
+event-day count rises from 3,484 to 3,497 and the headline numbers move in
+the third decimal; no conclusion changes. The
+lesson is the reason for the principle above: a reproducibility check is a
+data-quality test.
+
 ## Summary sentence
 
 Every data problem became a documented rule applied uniformly in code, with

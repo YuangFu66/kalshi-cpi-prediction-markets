@@ -146,7 +146,7 @@ class CommittedDataReproducesReportedResults(unittest.TestCase):
         acc = pd.read_csv(ROOT / "results/accuracy_by_horizon.csv")
         h = acc[(acc["sample"] == "headline") & (acc.horizon_days == 1)].set_index("forecaster")
         self.assertEqual(int(h.loc["kalshi", "n"]), 56)
-        self.assertAlmostEqual(h.loc["kalshi", "mae"], 0.092, delta=0.0006)     # 0.0915
+        self.assertAlmostEqual(h.loc["kalshi", "mae"], 0.091, delta=0.0006)
         self.assertAlmostEqual(h.loc["cleveland", "mae"], 0.128, delta=0.0006)
         self.assertLess(h.loc["kalshi", "mae"], h.loc["naive_last", "mae"])
 

@@ -13,7 +13,7 @@ distribution over the upcoming CPI print, and asks whether the market forecasts
 inflation as well as a professional model.
 
 **It does, and better.** One day before release the market's implied mean missed the
-print by **0.092 pp** on average, against **0.128 pp** for the Federal Reserve Bank of
+print by **0.091 pp** on average, against **0.128 pp** for the Federal Reserve Bank of
 Cleveland's daily nowcast. The gap is statistically significant (Diebold–Mariano
 p = 0.001 over 56 releases), grows as the release approaches, and both forecasters
 beat naive baselines by a wide margin.
@@ -37,17 +37,17 @@ same date, and the naive baselines use only prints already published by that dat
 
 | Days before release | Releases | Kalshi implied mean | Cleveland Fed nowcast | Naive: last print | Naive: 12-month mean |
 |---|---|---|---|---|---|
-| 30 | 54 | **0.139** | 0.147 | 0.267 | 0.226 |
+| 30 | 54 | **0.139** | 0.149 | 0.267 | 0.226 |
 | 14 | 56 | **0.107** | 0.127 | 0.245 | 0.217 |
 | 7  | 56 | **0.102** | 0.126 | 0.245 | 0.217 |
-| 1  | 56 | **0.092** | 0.128 | 0.245 | 0.217 |
+| 1  | 56 | **0.091** | 0.128 | 0.245 | 0.217 |
 
 Could the gap be luck? The Diebold–Mariano test asks whether one forecaster's errors
 are genuinely smaller month after month (Kalshi vs. Cleveland Fed, absolute-error loss):
 
 | Days before release | Mean loss difference | DM t | p-value | Kalshi closer |
 |---|---|---|---|---|
-| 30 | −0.008 | −0.47 | 0.64 | 27 of 54 |
+| 30 | −0.010 | −0.58 | 0.56 | 28 of 54 |
 | 14 | −0.019 | −1.58 | 0.11 | 31 of 56 |
 | 7  | −0.024 | −2.05 | 0.04 | 32 of 56 |
 | 1  | −0.037 | −3.26 | 0.001 | 32 of 56 |
@@ -87,7 +87,7 @@ slices the whole distribution into outcomes:
 The implied mean, Σ probability × outcome = **0.216%**, is the market's point
 forecast; the implied standard deviation is its uncertainty, and the probability on
 the bin that eventually occurred is its score. Because the bins are built by
-differencing, they telescope to exactly 1 (verified on all 3,484 event-days), so the
+differencing, they telescope to exactly 1 (verified on all 3,497 event-days), so the
 only incoherence a threshold market can show is a higher threshold priced above a
 lower one, which is measured and repaired rather than hidden.
 

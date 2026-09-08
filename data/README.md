@@ -43,7 +43,10 @@ committed so the whole analysis rebuilds offline with `make`.
 - **Quotes of 0.00 bid / 1.00 ask** mean nobody was quoting; those
   contract-days are treated as uninformative (spread filter).
 - **Daily candles end at midnight ET** and are labeled with the ET calendar
-  day they cover. The release date is the ET date of market close (8:25 am
+  day they cover, read from the candle's midpoint: at the spring
+  daylight-saving change Kalshi's boundary slips to 01:00 EDT for one day,
+  and labeling from the end timestamp would double up that day (see
+  `DECISIONS.md`). The release date is the ET date of market close (8:25 am
   ET on the scheduled BLS publication day).
 
 ## Raw Kalshi files
@@ -109,7 +112,7 @@ exclusive ranges), `settlement_sources` (Bureau of Labor Statistics).
 
 Rows are limited to 0–150 days before release.
 
-### `distribution_day.csv` — one row per event per day (3,484 rows)
+### `distribution_day.csv` — one row per event per day (3,497 rows)
 
 The market's complete forecast of one month's CPI on one day, obtained by
 differencing `implied_prob_above` across the event's thresholds.

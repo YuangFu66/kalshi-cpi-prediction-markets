@@ -36,7 +36,14 @@ quantities (`close` vs `close_dollars`, `volume` vs `volume_fp`).
 - Contracts with spread > $0.90 on a given day (in practice: quoted 0/100,
   i.e. no real quotes) are treated as uninformative and excluded that day.
 - Daily candles end at midnight ET; a candle is labeled with the ET calendar
-  day it covers.
+  day it covers, read from the candle's midpoint (12 hours before its end).
+  *Added 2026-09-08:* Kalshi shifts the candle boundary one day late at the
+  spring daylight-saving change, so one candle a year ends at 01:00 EDT;
+  labeling from the end timestamp had put two candles on the same day
+  (12 event-days over 2022–2026, including two 1-day and two 30-day
+  snapshots) and left the previous day empty. The midpoint rule fixes it;
+  the pipeline also drops any remaining duplicate contract-day, keeping the
+  latest-ending candle, and reports doing so.
 
 ## Distribution construction (per event-day)
 
