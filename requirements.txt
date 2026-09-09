@@ -7,3 +7,4 @@ pandas>=2.2
 numpy>=1.26
 openpyxl>=3.1
 matplotlib>=3.8
+tzdata>=2024.1        # time-zone database for zoneinfo on Windows (no-op elsewhere)

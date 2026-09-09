@@ -195,7 +195,13 @@ make test
 committed raw data in about fifteen seconds, with no network access; `make test`
 runs the unit tests plus the integration checks against the numbers in this README.
 Outputs land in `results/` (`evaluation.md` with every table, the CSV tables, the two
-charts and the benchmark workbook), `data/clean/` and `site/data/`. To browse the
+charts and the benchmark workbook), `data/clean/` and `site/data/`. Without `make`
+(for example on Windows) run the same steps directly, in this order:
+`python src/build_series.py`, `python src/build_benchmarks.py`, `python src/evaluate.py`,
+`python src/make_comparison_chart.py`, `python src/make_error_chart.py`,
+`python src/export_site_data.py`, then `python -m unittest discover -s tests`.
+`requirements-lock.txt` pins the exact library versions the results were verified with,
+should the unpinned install ever stop reproducing them. To browse the
 interactive site locally, serve the `site/` folder, for example with
 `python3 -m http.server 8000 --directory site`, and open `http://localhost:8000`.
 
