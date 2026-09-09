@@ -187,9 +187,17 @@ the real cases in [report/data_quality_methodology.md](report/data_quality_metho
 git clone https://github.com/YuangFu66/kalshi-cpi-prediction-markets.git
 cd kalshi-cpi-prediction-markets
 pip install -r requirements.txt
-make          # rebuilds every clean table, results table, chart and site dataset from the committed raw data (~15 s, no network)
-make test     # unit tests + integration checks against the numbers in this README
+make
+make test
 ```
+
+`make` rebuilds every clean table, results table, chart and site dataset from the
+committed raw data in about fifteen seconds, with no network access; `make test`
+runs the unit tests plus the integration checks against the numbers in this README.
+Outputs land in `results/` (`evaluation.md` with every table, the CSV tables, the two
+charts and the benchmark workbook), `data/clean/` and `site/data/`. To browse the
+interactive site locally, serve the `site/` folder, for example with
+`python3 -m http.server 8000 --directory site`, and open `http://localhost:8000`.
 
 `make pull` re-downloads the raw data from Kalshi, the Cleveland Fed and the BLS
 (about ten minutes, no API keys). Newer months will then be included, and the pinned
